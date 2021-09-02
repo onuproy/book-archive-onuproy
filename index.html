@@ -1,16 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>book-archive-onuproy </title>
+    <!-- css -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <!-- Goodle Font  -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <!-- Book Secion Area  -->
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="input-group">
+                        <input id="search-field" type="text" class="form-control" placeholder="Recipient's username"
+                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button onclick="searchBook();" class="btn btn-outline-secondary"
+                                type="button">Button</button>
+                        </div>
+                    </div>
+                    <p id="error"></p>
+                    <p id="error1"></p>
+                </div>
+            </div>
+            <div id="search-result" class="row">
 
-   
+            </div>
+        </div>
+    </div>
+    <!-- Book Secion Area  -->
 
-    <script src="app.js"></script>    
+
+
+    <script src="app.js"></script>
 </body>
+
 </html>

@@ -1,4 +1,116 @@
 body{
     padding: 0;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    padding:0;
+    margin:0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+img{
+    max-width:100%;
+}
+.product-area{
+	padding:60px 0 40px 0;
+}
+.product-image {
+	text-align: center;
+}
+.product-image img {
+	width: 85%;
+}
+.product-content h2 {
+	font-size: 35px;
+	padding-bottom: 3px;
+}
+h3 {
+	font-size: 16px;
+	font-weight: 600;
+}
+button {
+	border: 1px solid #000;
+	padding: 10px 10px;
+	border-radius: 5px;
+	margin-right: 10px;
+	font-weight: 300;
+    margin-bottom:10px;
+	font-size:15px;
+}
+.memory-area {
+	padding-bottom: 20px;
+	padding-top:30px;
+}
+.storage-area {
+	padding-bottom: 20px;
+}
+.delivery-options {
+	padding-bottom: 20px;
+}
+table tr{
+	border-bottom:1px solid #ccc;
+}
+table tr td {
+	font-size: 16px;
+	font-weight: 500;
+	margin: 8px 0;
+	display: inline-block;
+	padding:0 15px;
+}
+table tr td:first-child {
+	width: 195px;
+}
+table tr td:last-child {
+	width: 90px;
+}
+tr:last-child {
+	border-top: 2px solid #000;
+}
+button:focus {
+	background: rgba(0,0,0,0.7);
+	color: #FFF;
+}
+button:hover {
+	background: rgba(0,0,0,0.7);
+	color: #FFF;
+}
+.promocode-area {
+	padding-top: 20px;
+}
+.promocode-area h2 {
+	font-size: 20px;
+	font-weight: 400;
+}
+.promocode-area input {
+	height: 45px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	width: 206px;
+	font-size: 16px;
+	outline:none;
+	padding:0 15px
+}
+#promo-button {
+	padding: 0 18px;
+	width: auto;
+	height: 45px;
+	background: #DC3545;
+	color: #FFF;
+	border-color: #DC3545;
+}
+#bottom-price {
+	width: 130px;
+	display: inline-block;
+	text-align: left;
+}
+.bottom-total-price {
+	text-align: center;
+	margin-top: 15px;
+	border-top: 1px solid #CCC;
+	padding-top: 22px;
+}
+.bottom-total-price p {
+	font-size: 40px;
+	font-weight: 500;
 }
