@@ -44,9 +44,9 @@ const displayBookResult = books => {
               <div class="card-body">
                 <img src="https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg">
                 <h5 class="card-title">${book.title}</h5>
-                <span>${book.author_name}</span>
-                <span>${book.publisher_facet}</span>
-                <span>${book.first_publish_year}</span>
+                <span>By: ${book.author_name[0]}</span>
+                <span>Publisher :${book.publisher_facet}</span>
+                <span>First Published in: ${book.first_publish_year}</span>
               </div>
             </div>`;
             searchResult.appendChild(divcreate);

@@ -155,3 +155,13 @@ p {
     display: block;
     margin: 9px 0px;
 }
+h5.card-title {
+    margin-top: 20px;
+}
+.card-body img {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    max-height: 236px;
+    object-fit: scale-down;
+}
