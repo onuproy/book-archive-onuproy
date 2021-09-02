@@ -2,6 +2,7 @@ body{
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    background: #71d9ff;
 }
 *{
     padding:0;
@@ -11,6 +12,19 @@ body{
 }
 img{
     max-width:100%;
+}
+
+.title {
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+.title h2 {
+    color: #000;
+    font-size: 35px;
+    font-weight: 700;
+}
+.col-sm-4 {
+    margin-bottom: 20px;
 }
 .product-area{
 	padding:60px 0 40px 0;
@@ -113,4 +127,31 @@ button:hover {
 .bottom-total-price p {
 	font-size: 40px;
 	font-weight: 500;
+}
+
+.btn-outline-secondary {
+    color: #FFF;
+    border-color: #6c757d;
+    background: #000;
+}
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0 rgb(0 123 255 / 25%);
+}
+.btn-outline-secondary.focus, .btn-outline-secondary:focus {
+    box-shadow: 0 0 0 0 rgb(108 117 125 / 50%);
+}
+.input-group {
+    width: 70%;
+    margin: auto;
+}
+p {
+    text-align: center;
+}
+.card-body span {
+    display: block;
+    margin: 9px 0px;
 }

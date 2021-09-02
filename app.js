@@ -1,33 +1,42 @@
+
+const searchfield = document.getElementById('search-field');
+const errorMessage = document.getElementById('error');
+const searchResult = document.getElementById('search-result');
+const errorfound = document.getElementById('error-found');
+const totalresult = document.getElementById('total-result');
+
+// Search book 
 const searchBook = () => {
-    const searchfield = document.getElementById('search-field');
-    const errorMessage = document.getElementById('error');
     const searchText = searchfield.value;
     console.log(searchText);
     searchfield.value = '';
-    if(searchText == ""){
+    if (searchText == "") {
         errorMessage.innerText = "Please type input";
-        searchResult.textContent ='';
+        searchResult.textContent = '';
+        errorfound.innerText = "";
+        totalresult.innerText = "";
     }
-    else{
+    else {
         errorMessage.innerText = ""
-        const url =  `https://openlibrary.org/search.json?q=${searchText}`
+        const url = `https://openlibrary.org/search.json?q=${searchText}`
         fetch(url)
-        .then(response => response.json())
-        .then(data => displayBookResult(data.docs))
+            .then(response => response.json())
+            .then(data => displayBookResult(data.docs))
     }
 }
+// Display book 
 const displayBookResult = books => {
-    const searchResult = document.getElementById('search-result');
-    const errorMessages = document.getElementById('error1');
-    searchResult.textContent ='';
-    if(books.length == 0){
-        errorMessages.innerText = "Not Found";
-        searchResult.textContent ='';
+    searchResult.textContent = '';
+    if (books.length == 0) {
+        errorfound.innerText = "Not Found";
+        searchResult.textContent = '';
     }
-    else{
-        errorMessages.innerText = "";
+    else {
+        errorfound.innerText = "";
+        totalresult.innerText = "";
         books.forEach(book => {
-            console.log(book);
+            //total result
+            totalresult.innerText = ` ${books.length} result showing`;
             const divcreate = document.createElement('div');
             divcreate.classList.add('col-sm-4');
             divcreate.innerHTML = `
@@ -43,5 +52,5 @@ const displayBookResult = books => {
             searchResult.appendChild(divcreate);
         })
     }
-   
+
 }
