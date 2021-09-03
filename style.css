@@ -165,3 +165,13 @@ h5.card-title {
     max-height: 236px;
     object-fit: scale-down;
 }
+#spinner {
+	display: none;
+	margin:auto;
+}
+p#error {
+    color: red;
+}
+p#error-found {
+    color: red;
+}
